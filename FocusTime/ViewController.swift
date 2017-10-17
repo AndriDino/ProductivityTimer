@@ -8,8 +8,58 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    var seconds = 60
+    var min = 30
+    var timer = Timer()
+    
+
+    @IBOutlet weak var TimeLabel: UILabel!
+    @IBOutlet weak var SecondsLabel: UILabel!
+    @IBAction func SettingsButton(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var StartOutlet: UIButton!
+    @IBAction func StartButton(_ sender: AnyObject) {
+        
+         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        }
+    
+        func counter()
+        {
+            seconds -= 1
+            TimeLabel.text = String(min) + " minutes"
+            SecondsLabel.text = String(seconds) + " seconds"
+            
+            if(seconds == 0){
+                min -= 1
+                seconds = 60
+            }
+            
+        if (min == 0)
+        {
+            timer.invalidate()
+        }
+
+    }
+
+    @IBOutlet weak var PauseOutlet: UIButton! 
+    @IBAction func PauseButton(_ sender: AnyObject) {
+        timer.invalidate()
+    }
+    
+    @IBOutlet weak var ResetOutlet: UIButton!
+    @IBAction func ResetButton(_ sender: AnyObject) {
+        TimeLabel.text = "30 minutes"
+    }
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
