@@ -106,28 +106,13 @@
                             <constraint firstItem="uRD-R2-lzt" firstAttribute="top" secondItem="KXA-zj-CrD" secondAttribute="bottom" constant="13" id="swv-Mv-EZM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7Aq-5p-bvG">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="83r-MR-tfR">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aT3-8v-UHz">
-                                <rect key="frame" x="233" y="7" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
-                                <connections>
-                                    <segue destination="eTN-aN-apj" kind="show" id="Cor-uL-YDb"/>
-                                </connections>
-                            </button>
-                            <connections>
-                                <segue destination="eTN-aN-apj" kind="show" id="2nl-Ig-eDp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Focus Time" id="7Aq-5p-bvG"/>
                     <connections>
                         <outlet property="PauseOutlet" destination="9rV-Av-RA0" id="HMy-jp-5iT"/>
                         <outlet property="ResetOutlet" destination="cX1-ej-LA2" id="TVO-2h-8Ad"/>
                         <outlet property="SecondsLabel" destination="uRD-R2-lzt" id="PO9-zY-pcB"/>
                         <outlet property="StartOutlet" destination="1EN-Al-0ZV" id="XEL-sl-mEn"/>
                         <outlet property="TimeLabel" destination="jmv-CD-bCN" id="a2W-U0-Lxj"/>
-                        <segue destination="eTN-aN-apj" kind="show" id="T2D-4r-fav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -193,7 +178,4 @@
             <point key="canvasLocation" x="1117.5" y="-396.12676056338029"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Cor-uL-YDb"/>
-    </inferredMetricsTieBreakers>
 </document>

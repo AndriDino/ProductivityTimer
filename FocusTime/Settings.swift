@@ -24,9 +24,6 @@ class Settings: UIViewController {
     @IBOutlet weak var TimingLabel: UILabel!
     
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

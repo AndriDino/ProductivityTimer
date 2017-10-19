@@ -18,8 +18,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var SecondsLabel: UILabel!
-    @IBAction func SettingsButton(_ sender: Any) {
-    }
+   
     
     @IBOutlet weak var StartOutlet: UIButton!
     @IBAction func StartButton(_ sender: AnyObject) {
@@ -54,10 +53,6 @@ class ViewController: UIViewController {
     @IBAction func ResetButton(_ sender: AnyObject) {
         TimeLabel.text = "30 minutes"
     }
-    
-    
-    
-    
     
     
     override func viewDidLoad() {
