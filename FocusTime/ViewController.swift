@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var timer = Timer()
     
 
+    @IBOutlet weak var SettingButton: UIBarButtonItem!
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var SecondsLabel: UILabel!
    
@@ -29,8 +30,8 @@ class ViewController: UIViewController {
         func counter()
         {
             seconds -= 1
-            TimeLabel.text = String(min) + " minutes"
-            SecondsLabel.text = String(seconds) + " seconds"
+            TimeLabel.text = String(min)
+            SecondsLabel.text = String(seconds)
             
             if(seconds == 0){
                 min -= 1
@@ -51,7 +52,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ResetOutlet: UIButton!
     @IBAction func ResetButton(_ sender: AnyObject) {
-        TimeLabel.text = "30 minutes"
+        TimeLabel.text = "30"
+        SecondsLabel.text = "60"
     }
     
     

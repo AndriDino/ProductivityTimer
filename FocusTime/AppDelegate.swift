@@ -9,6 +9,7 @@
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -17,12 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        UINavigationBar.appearance().barTintColor = UIColor.white
-        UINavigationBar.appearance().backgroundColor = UIColor.cyan
-        let navigationFont = UIFont(name: "SanFranciscoDisplay-SemiBold", size: 18)
-        let navigationFontAttributes = [NSFontAttributeName : navigationFont]
+        UINavigationBar.appearance().titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Futura-Medium", size: 18.0)!, NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().isTranslucent = false
         
-        UINavigationBar.appearance().titleTextAttributes = UIFont.navigationFontAttributes
+        //UINavigationBar.appearance().barTintColor = UIColor.red
         
         return true
     }

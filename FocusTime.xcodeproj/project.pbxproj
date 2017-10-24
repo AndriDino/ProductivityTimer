@@ -305,6 +305,7 @@
 				F517ABC31F92C96900F5E72B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
